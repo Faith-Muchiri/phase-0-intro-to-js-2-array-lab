@@ -6,36 +6,72 @@
 //   });
 
 
-const cats=["Milo", "Otis","Garfield"];
+// const cats=["Milo", "Otis","Garfield"];
+
+// function destructivelyAppendCat(name){
+//     cats.push("Ralph");
+//     return cats;
+// }
+// function destructivelyPrependCat(name)
+// {
+//     return cats.unshift("Bob");
+// }
+// function  destructivelyRemoveLastCat(){
+//     return cats.pop(cats.length-1);
+// }
+// function destructivelyRemoveFirstCat(){
+//     return cats.shift(cats[0]);
+// }
+// function appendCat(name){
+//     const newCats= [...cats,"Broom"];
+//     return newCats;
+// }
+// function prependCat(name){
+//     const newCats= ["Arnold",...cats];
+//     return newCats
+// }
+// function removeLastCat(){
+//     const newCats=cats.slice(0,cats.length-1);
+//     return newCats;
+// }
+// function removeFirstCat(){
+//     const newCats=cats.slice(1);
+//     return newCats;
+// }
+// console.log(cats);
+
+
+
+const cats =[];
+cats.push("Milo","Otis","Garfield");
 
 function destructivelyAppendCat(name){
-    cats.push("Ralph");
-    return cats;
+    return cats.push('Ralph');  
 }
-function destructivelyPrependCat(name)
-{
-    return cats.unshift("Bob");
+
+function destructivelyPrependCat(name){
+    return cats.unshift('Bob');
 }
-function  destructivelyRemoveLastCat(){
-    return cats.pop(cats.length-1);
+
+function destructivelyRemoveLastCat(){
+    return cats.pop();
 }
 function destructivelyRemoveFirstCat(){
-    return cats.shift(cats[0]);
+    return cats.shift();
 }
 function appendCat(name){
-    const newCats= [...cats,"Broom"];
+    const newCats=[...cats,"Broom"];
     return newCats;
 }
 function prependCat(name){
-    const newCats= ["Arnold",...cats];
-    return newCats
+    const newCats=["Arnold", ...cats];
+    return newCats;
 }
 function removeLastCat(){
-    const newCats=cats.slice(0,cats.length-1);
+    const newCats =cats.slice(0,-1);
     return newCats;
 }
 function removeFirstCat(){
-    const newCats=cats.slice(1);
+    const newCats =cats.slice(1);
     return newCats;
-}
-console.log(cats);
+} 
